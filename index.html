@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>음료 키오스크</title>
+    
+           
+     <link rel="stylesheet" href="./kiosk.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+     <script src="./kiosk.js"></script> 
+
+
+
+</head>
+
+<body>
+
+  
+     <video autoplay loop muted >
+        <source src="./NEW ASAHI SUPER DRY _ 본편(15”).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+
+    <div class="header">
+        <h1 id="header" class="slidein"> 음료 키오스크 </h1>
+        <button type="button" class="button">주문</button>
+    </div>
+    <hr>
+    <div class="main-content">
+        
+        <ul class="product-list">
+            <li><img src="./콜라.png" alt="콜라">
+                <p class="product-name">콜라 </p>
+                <p class="product-price">가격:1000원</p>
+                <a>콜라:1000원</a>
+                <input type="number" value="1" min="1" class="quantity-input">
+
+                
+            </li>
+            <li><img src="./사이다.png" alt="사이다">
+                <p class="product-name">사이다</p>
+                <p class="product-price">가격:1000원 </p>
+                <a>사이다:1000원</a>
+                <input type="number" value="1" min="1" class="quantity-input">
+
+            </li>
+            <li><img src="./물.png" alt="물">
+                <p class="product-name">물 </p>
+                <p class=" product-price">가격:1000원</p>
+                <a>물:1000원</a>
+                <input type="number" value="1" min="1" class="quantity-input">
+
+            </li>
+            <li><img src="./환타.png" alt="환타">
+                <p class="product-name">환타  </p>
+                <p class="product-price">가격: 1000원 </p>
+                <a>환타:1000원 </a>
+                <input type="number" value="1" min="1" class="quantity-input">
+
+            </li>
+            <li><img src="./웰치스.png" alt="웰치스 ">
+                <p class="product-name">웰치스</p>
+                <p class="product-price">가격: 1000원 </p>
+                <a>웰치스:1000원 </a>
+                <input type="number" value="1" min="1" class="quantity-input">
+
+            </li>
+            <li><img src="./맥주.png" alt="맥주">
+                <p class="product-name">맥주</p>
+                <p class="product-price ">가격:2000원 </p>
+                <a>맥주:2000원</a>
+                
+                <input type="number" value="1" min="1" class="quantity-input">
+
+            </li>
+        </ul>
+        <div class="cart">
+            <h3>장바구니 </h3>
+            
+            <button class="delete-button">삭제</button>
+            <hr>
+
+        <ul id ="cart">
+
+        </ul>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+
+</body>
+</html>

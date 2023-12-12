@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+     background-color: gray;  
+    margin : 0;
+    padding : 0;
+    z-index: -1;
+ }  
+ .button{
+    position: relative;
+    margin-left: 90px;
+    right: 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    top: 0;
+    font-size: 38px;
+ }
+ h1 {
+    text-align: center;
+    color: white;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+from {
+margin-top: -100px;
+opacity: 0;
+
+to {
+margin-top: 0;
+opacity: 1;
+    }
+}
+}
+
+.snowflake {
+    position: absolute;
+    font-size: 26px;
+    animation: fall 3s linear infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    0% { top: -10%; }
+    100% { top: 110%; }
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+ #btn {
+    padding: 10px 20px;
+    font-size: 32px;
+    width: 200px; 
+    height: 60px; 
+    background-color:green ;
+    border-radius: 5px;
+
+}
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-list li {
+    background: white;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    height: 150px;
+    flex-basis: calc(50% - 20px);
+    box-sizing: border-box;
+    list-style: none;
+    border-radius: 5px;
+    
+    
+}
+@media (min-width: 600px) {
+    .product-list li {
+        flex-basis: calc(33.333% - 20px);
+    }
+}
+.cart {
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    padding: 10px;
+    border: 3px solid aquamarine;
+    height: 100px;
+    width: 200px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+  .product-list li {
+    position: relative;
+    top: 150px;
+     list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    text-align: center; 
+}  
+.product-list li .product-name,
+.product-list li .product-price {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+/* 이미지크기 조절 */
+.product-list li img {
+    width: 180px; 
+    height: 150px; 
+}
+.main-content p{
+    display: none;
+}
+.quantity-input {
+    position: relative;
+    top: -28px;
+    margin-left: 50px;
+}
+a{  
+    border: 1px solid bisque; padding:1px ;
+    position: relative;
+    top: -50px;
+    font-size: 14px;
+}
+.delete-button {
+position: relative;
+margin-left: 30px;
+right: 15px;
+background-color: #ff0000;
+color: #ffffff;
+border: none;
+padding: 5px 8px;
+cursor: pointer;
+top: 0;
+font-size: 38px;
+}
+
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
