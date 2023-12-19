@@ -212,8 +212,8 @@ function printOrderSummary() {
     var printWindow = window.open('', '_blank');
     var orderSummary = completeOrder();
     console.log(orderSummary);
-    var html = '<html><head><title>주문 내역:</title></head><body>';
-    html += '<h1>주문 내역</h1><hr>';
+    var html = '<html><head><title>주문완료</title></head><body>';
+    html += '<h1>주문완료</h1><hr>';
     html += '<pre>' + orderSummary + '</pre>';
     html += '</body></html>';
 
